@@ -1,24 +1,18 @@
-# README
+# How to run
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+gem install rails
+rake db:create
+rake db:migrate
+rails s
 
-Things you may want to cover:
+# Entities
 
-* Ruby version
+rails g scaffold country id:primary_key name:string
 
-* System dependencies
+rails g scaffold competition id:primary_key name:string
 
-* Configuration
+rails g scaffold team id:primary_key name:string country:references
 
-* Database creation
+rails g scaffold method id:primary_key name:string description:string
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails g scaffold bet id:primary_key bet_date:date competition:references country:references team1:references team2:references stake:decimal(5,2) odd:decimal(5,2) gain:decimal(5,2) roe:decimal(5,2) method:references score:string minutes:number score_by:string description:string
