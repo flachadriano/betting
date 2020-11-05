@@ -5,7 +5,13 @@ rake db:create
 rake db:migrate
 rails s
 
+## Guide to configure layout
+
+https://medium.com/@adamlangsner/google-oauth-rails-5-using-devise-and-omniauth-1b7fa5f72c8e
+
 # Entities
+
+rails g model admin email:string full_name:string uid:string avatar_url:string
 
 rails g scaffold country id:primary_key name:string
 

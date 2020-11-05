@@ -1,4 +1,7 @@
 Rails.application.configure do
+  ENV['GOOGLE_OAUTH_CLIENT_ID'] = '951970986937-k6trj5f7188t6spkd6uk7k3parvvdb4d.apps.googleusercontent.com'
+  ENV['GOOGLE_OAUTH_CLIENT_SECRET'] = 'Zsi0F465eULdQQ8lBrH75qbP'
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
